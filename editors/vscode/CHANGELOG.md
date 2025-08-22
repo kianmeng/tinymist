@@ -53,7 +53,7 @@ The changelog lines unspecified with authors are all written by the @Myriad-Drea
 
 * (Fix) Always sending compiled interrupt to main thread in https://github.com/Myriad-Dreamin/tinymist/pull/2001
     * If such interrupt is not sent, the main thread will be stalled forever.
-* (Fix) Preventing `pending_reasons` (compilation) from cleaning up ocassionally in https://github.com/Myriad-Dreamin/tinymist/pull/2005
+* (Fix) Preventing `pending_reasons` (compilation) from cleaning up occasionally in https://github.com/Myriad-Dreamin/tinymist/pull/2005
     * Some `onSaved` signals are lost when the `pending_reasons` is cleaned up, which causes the issue of not exporting PDF after saving.
 * (Fix) Utilizing lsp's `onSave` to cover issue of unhandled fs changes from notify actor in https://github.com/Myriad-Dreamin/tinymist/pull/2006
     * This fixes the issue of not exporting PDF if somebody saves the document frequently in a short time.
@@ -107,7 +107,7 @@ The changelog lines unspecified with authors are all written by the @Myriad-Drea
 
 ### Preview
 
-* (Fix) Removed some compatiblility to preview configuration and fix `tinymist.preview.refresh` in https://github.com/Myriad-Dreamin/tinymist/pull/1807
+* (Fix) Removed some compatibility to preview configuration and fix `tinymist.preview.refresh` in https://github.com/Myriad-Dreamin/tinymist/pull/1807
 
 ### Misc
 
@@ -257,7 +257,7 @@ There is a [sample workspace](https://github.com/Myriad-Dreamin/tinymist/tree/ma
 
 ### Server
 
-* Hot updating configuratuion item `tinymist.compileStatus` in https://github.com/Myriad-Dreamin/tinymist/pull/1584
+* Hot updating configuration item `tinymist.compileStatus` in https://github.com/Myriad-Dreamin/tinymist/pull/1584
 * Supporting `--feature` and `--pdf-standard` in `typstExtraArgs` in https://github.com/Myriad-Dreamin/tinymist/pull/1596
 * Resolving roots of typst packages in https://github.com/Myriad-Dreamin/tinymist/pull/1663
 
@@ -276,7 +276,7 @@ There is a [sample workspace](https://github.com/Myriad-Dreamin/tinymist/tree/ma
   * When typing on `$|$`, it was not completing `""` correctly since the editor thought `$$` are string and the cursor is in a string.
 * (Perf) Delaying focus change to typst documents in https://github.com/Myriad-Dreamin/tinymist/pull/1662
   * This was invalidating vfs cache frequently when you switch document by APIs like "goto definition".
-* (Change) Changing configuratuion item `tinymist.formatterMode`'s default value from `never` to `typstyle` by @kaerbr in https://github.com/Myriad-Dreamin/tinymist/pull/1655
+* (Change) Changing configuration item `tinymist.formatterMode`'s default value from `never` to `typstyle` by @kaerbr in https://github.com/Myriad-Dreamin/tinymist/pull/1655
 * Supporting to use `{pageCount}` in `tinymist.statusBarFormat` in https://github.com/Myriad-Dreamin/tinymist/pull/1666
 * Providing AST view in https://github.com/Myriad-Dreamin/tinymist/pull/1617
 
@@ -308,7 +308,7 @@ There is a [sample workspace](https://github.com/Myriad-Dreamin/tinymist/tree/ma
 * (Fix) Corrected `name_range` implementation in https://github.com/Myriad-Dreamin/tinymist/pull/1623
   * This was causing the issue when hovering bibliography items.
 * (Fix) Corrected parameter name in `diff` function for clarity by @BlueQuantumx in https://github.com/Myriad-Dreamin/tinymist/pull/1700
-* (Fix) Recogizing built-in CSL styles correctly by @BlueQuantumx in https://github.com/Myriad-Dreamin/tinymist/pull/1704
+* (Fix) Recognizing built-in CSL styles correctly by @BlueQuantumx in https://github.com/Myriad-Dreamin/tinymist/pull/1704
 * Checking field of literals in https://github.com/Myriad-Dreamin/tinymist/pull/1619
   * This was causing the issue when code completing methods of literals.
 

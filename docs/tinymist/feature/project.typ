@@ -79,8 +79,8 @@ There are several features that can be implemented using the _Compilation Histor
 
 = Project Route
 
-The language server will load route entries from disk or memory, combine, and perform entry lookup based on the route table. Specificially, *The depended files* of a single compilation will be stored as route entries in the cache directory after compilation. A single route entry is a triple, (Dependent Path, Project ID, Priority), where:
-- "Dependent Path" is an absoulte dependent file path, like paths to assets and source files in packages.
+The language server will load route entries from disk or memory, combine, and perform entry lookup based on the route table. Specifically, *The depended files* of a single compilation will be stored as route entries in the cache directory after compilation. A single route entry is a triple, (Dependent Path, Project ID, Priority), where:
+- "Dependent Path" is an absolute dependent file path, like paths to assets and source files in packages.
 - "Project ID" is the project id (main file) indexing an entry in the _Compilation History_ (`tinymist.lock`).
 - "Priority" is a priority number.
 
